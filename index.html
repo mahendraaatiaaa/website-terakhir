@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Classifier</h1>
+        
+        <input type="file" id="imageUpload" accept="image/*">
+        
+        <!-- Preview Image -->
+        <div id="imagePreviewContainer">
+            <img id="imagePreview" src="" alt="Image Preview" />
+        </div>
+
+        <button id="classifyButton" disabled>Classify Image</button>
+        <canvas id="imageCanvas" style="display: none;"></canvas>
+        <div id="result"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.12.0/dist/ort.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
